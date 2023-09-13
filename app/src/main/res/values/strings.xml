@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BuzzWareTechTask</string>
+    <string name="signin">Sign In</string>
+    <string name="signup">Sign Up</string>
+    <string name="forgetpassword">Forget Your Password</string>
+    <string name="continuewith">or continue with</string>
+    <string name="footertext">Dont have Account yet?</string>
+    <string name="registration">Registration</string>
+    <string name="alreadyaccount">Already have an account</string>
+    <string name="aboutme">About me</string>
+    <string name="getstarted">Get Started</string>
+    <string name="pets">My Pets</string>
+    <string name="favourite">My Favourite</string>
+    <string name="addpets">Add pet service</string>
+    <string name="friend">Invite Friends</string>
+    <string name="help">Help</string>
+    <string name="setting">Setting</string>
+</resources>

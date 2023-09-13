@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_Search"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom"
+        android:gravity="center"/>
+
+    <item
+        android:id="@+id/navigation_appointment"
+        android:title="Appointment"
+        android:icon="@drawable/ic_appointment"
+        app:showAsAction="ifRoom"
+        android:gravity="center"/>
+
+    <item
+        android:id="@+id/navigation_explore"
+        android:title="Explore"
+        android:icon="@drawable/ic_explore"
+        app:showAsAction="ifRoom"
+        android:gravity="center"/>
+    <item
+        android:id="@+id/navigation_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="ifRoom"
+        android:gravity="center"/>
+</menu>

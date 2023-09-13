@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="417dp"
+        android:layout_height="313dp"
+        android:background="@drawable/ic_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:elevation="@dimen/_8sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/signinheader"
+            android:layout_width="207dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="@string/signup"
+            android:textColor="#ECE8E8"
+            android:textSize="@dimen/_28sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="318dp"
+        android:layout_height="360dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:elevation="@dimen/_10sdp"
+        android:background="@drawable/rounded_frame"
+        app:layout_constraintBottom_toTopOf="@id/footerlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:hint="Enter your text"
+            app:boxBackgroundColor="@android:color/white"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeWidth="2dp"
+            app:hintEnabled="true"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@android:color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:hint="Enter your text"
+            app:boxBackgroundColor="@android:color/white"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeWidth="2dp"
+            app:hintEnabled="true"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@android:color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Inside your ConstraintLayout -->
+        <LinearLayout
+            android:id="@+id/permissionbuContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_140sdp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            tools:ignore="MissingConstraints">
+
+            <CheckBox
+                android:id="@+id/permissionbuCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/purple_700"
+                android:focusable="false"
+                android:clickable="false"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/permissionbu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgetpassword"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp" /> <!-- Adjust margin as needed -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/permissContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_180sdp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            tools:ignore="MissingConstraints">
+
+            <CheckBox
+                android:id="@+id/permissCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/purple_700"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/permiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forgetpassword"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp" /> <!-- Adjust margin as needed -->
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_210sdp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/signup"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            tools:ignore="MissingConstraints" />
+
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/footerlayout"
+        android:layout_width="413dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frameLayout">
+
+        <TextView
+            android:id="@+id/appcontinue"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginStart="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_29sdp"
+            android:text="@string/continuewith"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/fbicon"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="84dp"
+            android:background="@drawable/ic_fb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/googleicon"
+            android:layout_width="@dimen/_42sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="84dp"
+            android:background="@drawable/ic_google"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/footertext"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_29sdp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="184dp"
+            android:text="@string/alreadyaccount"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/signinfooter"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_29sdp"
+            android:layout_marginStart="@dimen/_203sdp"
+            android:layout_marginTop="184dp"
+            android:clickable="true"
+            android:text="@string/signin"
+            android:textColor="@color/purple_700"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
